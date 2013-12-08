@@ -36,7 +36,7 @@ public class SimpleMyBatisRepository<T, ID extends Serializable> implements MyBa
 
 	@Override
 	public boolean exists(ID id) {
-		return findOne(id) == null ? false : true;
+		return findOne(id) != null;
 	}
 
 	@Override
