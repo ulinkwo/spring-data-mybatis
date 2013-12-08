@@ -9,8 +9,7 @@ import org.springframework.data.repository.config.XmlRepositoryConfigurationSour
 import org.springframework.util.StringUtils;
 import org.w3c.dom.Element;
 
-public class MyBatisRepositoryConfigExtension extends
-		RepositoryConfigurationExtensionSupport {
+public class MyBatisRepositoryConfigExtension extends RepositoryConfigurationExtensionSupport {
 
 	@Override
 	public String getRepositoryFactoryClassName() {

@@ -43,10 +43,9 @@ public class InfrastructureConfig implements ResourceLoaderAware {
 	public SqlSessionFactory sqlSessionFactory() throws Exception {
 		SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource());
-		sessionFactory
-				.setTypeAliasesPackage("org.springframework.data.mybatis.domain");
-		sessionFactory
-				.setMapperLocations(getResources("classpath*:mapper/**/*.xml"));
+		sessionFactory.setTypeAliasesPackage("org.springframework.data.mybatis.domain");
+		sessionFactory.setMapperLocations(getResources("classpath*:mapper/**/*.xml"));
+
 		return sessionFactory.getObject();
 	}
 

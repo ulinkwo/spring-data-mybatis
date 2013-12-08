@@ -6,12 +6,11 @@ import org.springframework.data.repository.config.RepositoryBeanDefinitionRegist
 import org.springframework.data.repository.config.RepositoryConfigurationExtension;
 
 /**
- * {@link ImportBeanDefinitionRegistrar} to enable {@link EnableMyBatisRepositories} annotation.
+ * {@link org.springframework.context.annotation.ImportBeanDefinitionRegistrar} to enable {@link EnableMyBatisRepositories} annotation.
  * 
  * @author Jean-Christophe Lagache
  */
-public class MyBatisRepositoriesRegistrar extends
-		RepositoryBeanDefinitionRegistrarSupport {
+public class MyBatisRepositoriesRegistrar extends RepositoryBeanDefinitionRegistrarSupport {
 
 	@Override
 	protected Class<? extends Annotation> getAnnotation() {

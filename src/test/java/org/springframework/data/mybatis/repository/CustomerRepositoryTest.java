@@ -18,11 +18,12 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class CustomerRepositoryTest {
 
-	@Autowired CustomerRepository customerRepository;
+	@Autowired
+    CustomerRepository customerRepository;
 	
 	@Test
 	public void testFindOneCustomer() {		
-		Customer customer = customerRepository.findOne(new Integer(100));
+		Customer customer = customerRepository.findOne(100);
 		assertNotNull(customer);
 	}
 	
